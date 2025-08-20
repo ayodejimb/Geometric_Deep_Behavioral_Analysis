@@ -38,6 +38,7 @@ We use the the DeepLabCut (DLC) animal pose tracking toolbox to extract the mice
   year={2025},
   organization={IEEE}
 }
+```
 
 ## License
 This code and models are available for non-commercial scientific research purposes as defined in the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). By downloading and using this code you agree to the terms in the [LICENSE](LICENSE). Third-party codes are subject to their respective licenses.
