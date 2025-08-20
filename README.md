@@ -29,7 +29,7 @@ We use the the DeepLabCut (DLC) animal pose tracking toolbox to extract the mice
 
 ## How to Cite
 - If any part of this work has been useful to you, do not forget to cite. An example bibtex citation is:
-  ```bibtex
+```bibtex
 @inproceedings{olaoluwa2025skeleton,
   title={A Skeleton-based Geometric Deep Neural Network for Alzheimer’s Disease Mice Behavioral Analysis},
   author={Olaoluwa, Mubarak and Drira, Hassen and Abdallah, Ines Ben and Harsan, Laura and Mathis, Chantal},
