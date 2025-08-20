@@ -15,7 +15,7 @@ We use the the DeepLabCut (DLC) animal pose tracking toolbox to extract the mice
 - For packages and dependencies, first create an enviroment using Python, activate the enviroment and run "pip install -r requirements.txt"
 
 ## Data Preparation 
-- In the 'data_preparation' folder contains the files for preparing the pose skeleton files before feeding them to the geometric deep framework. Our preparation scripts follow this order: <br>  <br>
+- In the **data_preparation** folder contains the files for preparing the pose skeleton files before feeding them to the geometric deep framework. Our preparation scripts follow this order: <br>  <br>
 `create_project.m`  ---> `extract_video_frames.m` ---> 'get_arena_coordinates.m' ---> 'get_obj_1_coordinates.m'  ---> 'get_obj_2_coordinates.m' ---> 'normalize_data.m' ---> 'normalize_obj_1_coord.m' ---> 'normalize_obj_2_coord.m' ---> 'extract_skeleton_within.m' ---> 'extract_skeleton_beyond.m' ---> 'extract_skeleton_all.m'
  
 ## Data Loading 
