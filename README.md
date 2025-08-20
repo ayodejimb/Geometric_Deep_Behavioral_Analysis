@@ -28,7 +28,15 @@ We use the the DeepLabCut (DLC) animal pose tracking toolbox to extract the mice
 - Use the 'compute_ang_velocity' file to calculate the angular velocities
 
 ## How to Cite
-- If any part of this work has been useful to you, do not forget to cite. An example bibtex citation is ...
+- If any part of this work has been useful to you, do not forget to cite. An example bibtex citation is:
+  @inproceedings{olaoluwa2025skeleton,
+  title={A Skeleton-based Geometric Deep Neural Network for Alzheimer’s Disease Mice Behavioral Analysis},
+  author={Olaoluwa, Mubarak and Drira, Hassen and Abdallah, Ines Ben and Harsan, Laura and Mathis, Chantal},
+  booktitle={2025 IEEE 19th International Conference on Automatic Face and Gesture Recognition (FG)},
+  pages={1--10},
+  year={2025},
+  organization={IEEE}
+}
 
 ## License
 This code and models are available for non-commercial scientific research purposes as defined in the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). By downloading and using this code you agree to the terms in the [LICENSE](LICENSE). Third-party codes are subject to their respective licenses.
