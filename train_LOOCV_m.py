@@ -9,7 +9,6 @@ import torchgeometry.core as tgmc
 import copy
 from processing.CenteredScaled import CenteredScaled
 from processing.inv_exp import inv_exp
-from processing.PT import *
 from models.RigidNet import RigidNet
 from models.NonRigidNet import NonRigidNet
 import json
@@ -39,8 +38,8 @@ else:
 options=['RigidTransform','NonRigidTransform','RigidTransformInit','NonRigidTransformInit']
 
 # ========== First Big Loop to extract all samples ==============
-for opt, data in all_dist.items():    
-    data_samples, label_samples = load_data(opt)
+for opt_, data in all_dist.items():    
+    data_samples, label_samples = load_data(opt_)
     print(data_samples.shape, len(label_samples[1]))
 
     res = {}
@@ -55,9 +54,9 @@ for opt, data in all_dist.items():
     folds_label_last_batch = {}
 
     # path to save the attention weights and clasification results
-    save_att = r'C:\Desktop\attention_multi_class\both_attn_results_OiP\{}'.format(opt)
+    save_att = r'C:\Desktop\attention_multi_class\both_attn_results_OiP\{}'.format(opt_)
     os.makedirs(save_att, exist_ok=True)
-    file_path = r"C:\Downloads\Multi_Class_OiP\{}\classsification_attn_results.json".format(opt)
+    file_path = r"C:\Downloads\Multi_Class_OiP\{}\classsification_attn_results.json".format(opt_)
 
     # ============= The LOOCV Loop ==================
     indexes = []
@@ -77,7 +76,7 @@ for opt, data in all_dist.items():
         save_max = True
         cast = 'log_0refseq'
 
-        print('Running ', opt,  ' for fold ', index+1)
+        print('Running ', opt_,  ' for fold ', index+1)
 
         X_train = np.reshape(X_train, (X_train.shape[0], X_train.shape[1], X_train.shape[2]//2 , 2))
         X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1], X_test.shape[2]//2 , 2))
@@ -262,7 +261,7 @@ for opt, data in all_dist.items():
     print("Max average is {} with value {:.2f}".format(options[max_column], max_avg))
 
     # ============  Then finally save in a dictionary ==============
-    res[opt] = (indexes, columns[max_column])
+    res[opt_] = (indexes, columns[max_column])
 
     # Save the dictionary acc to a file
     with open(file_path, "w") as f:
