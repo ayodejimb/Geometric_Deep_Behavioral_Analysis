@@ -27,6 +27,9 @@ We use the the DeepLabCut (DLC) animal pose tracking toolbox to extract the mice
 ## Angular velocity
 - Use the `compute_ang_velocity.py` file to calculate the angular velocities
 
+# Acknowledgements
+- The **data preparation** codes were inspired from the toolbox of **Matthieu Aguilera** which can be found [here](https://github.com/FunSyCNRS/FunSy_WYB-Toolbox)
+
 ## How to Cite
 - If any part of this work has been useful to you, do not forget to cite. An example bibtex citation is:
 ```bibtex
